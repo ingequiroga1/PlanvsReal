@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="princ.aspx.cs" Inherits="Repo.App.clases.princ" %>

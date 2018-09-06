@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="filtros row">
+            <div class="col-md-6">
+                <div class="finicial">
+                    Inicial: <input type="date" name="tbfechaini" id="tbfechaini" />
+                </div>
+                <div class="ffinal">
+                    Final: <input type="date" name="tbfechafin" id="tbfechafin" />
+                </div>
+                <div class="btnfiltro">
+                    <input type="button" id="buscar" class="btn btn-primary" value="Buscar" />
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="selcentro">
+                    Centro:
+                    <select id="sel1">
+                        <option>Todos</option>
+                        <option>AGH1</option>
+                        <option>AGH2</option>
+                    </select>
+                </div>
+                <div class="sellinea">
+                    Línea:
+                    <select id="linea">
+                        <option>Todos</option>
+                        <option>Convencional</option>
+                        <option>Ac Especiales</option>
+                        <option>Purísima</option>
+                        <option>Plegadizo</option>
+                        <option>Flexible</option>
+                        <option>Digital</option>
+                        <option>AA</option>
+                        <option>Manga</option>
+                    </select>
+                </div>
+
+
+
+            </div>
+
+
+            <!--
+        <input type="button" id="mostrar" class="btn btn-primary" value="Mostrar" />
+        -->
+
+        </div>
+
+       
+
+        <div id="divstatus"></div>
+        
+
+        <div id="atrasprinc" style="display: none; margin-top: 30px;">
+            <button class="btn-primary" onclick="reginicio()">Atras</button>
+        </div>
+
+        <div id="atrasmed" style="display: none; margin-top: 30px;">
+            <button class="btn-primary" onclick="regmed()">Atras</button>
+        </div>
+
+        <div id="atrasultimo" style="display: none; margin-top: 30px;">
+            <button class="btn-primary" onclick="regultimo()">Atras</button>
+        </div>
+
+        <div class="loader"></div>
+
+        <div id="divtabla" style="margin-top: 30px;">
+        </div>
+
+        <div id="divtablaint" style="margin-top: 30px;">
+        </div>
+
+        <div id="divtablatipo" style="margin-top: 30px;">
+        </div>
+
+        <div id="tablaini">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>OrdenFabricacion</th>
+                        <th>CantPlan</th>
+                        <th>CantReal</th>
+                        <th>MontoPlan</th>
+                        <th>MontoReal</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+
+    </div>
+
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Archivos JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
